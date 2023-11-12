@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   return (
     <main tw="px-6 pb-20 max-w-6xl w-full mx-auto">
       <header tw="text-center mt-20 mb-10 space-y-6">
-        <h1 tw="text-5xl font-bold">Railway OG Image Generator</h1>
+        <h1 tw="text-5xl font-bold">Mozart409 OG Image Generator</h1>
         <h2 tw="text-xl text-gray-600">Dynamic open graph images service</h2>
       </header>
 
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         </>
       )}
 
-      <section tw="mt-16 grid gap-8 grid-cols-1 md:grid-cols-2">
+      {/* <section tw="mt-16 grid gap-8 grid-cols-1 md:grid-cols-2">
         <div>
           <H2>What is This?</H2>
           <P>
@@ -51,14 +51,13 @@ const Home: NextPage = () => {
 
           <P>
             This service is currently in use by{" "}
-            <StyledLink href="https://railway.app">Railway</StyledLink> and used
-            to dynamically generate OG images for the{" "}
-            <StyledLink href="https://docs.railway.app">docs</StyledLink> and{" "}
-            <StyledLink href="https://blog.railway.app">blog</StyledLink>.
+            <StyledLink href="https://mozart409.com">Mozart409</StyledLink> and
+            used to dynamically generate OG images for the{" "}
+            <StyledLink href="https://blog.mozart409.com">blog</StyledLink>.
           </P>
         </div>
 
-        <div>
+         <div>
           <H2>Make it Your Own</H2>
 
           <P>
@@ -84,7 +83,7 @@ const Home: NextPage = () => {
             </Link>
           </P>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

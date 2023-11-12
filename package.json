@@ -1,5 +1,5 @@
 {
-  "name": "railway-og-image-generator",
+  "name": "opengraph-railway",
   "private": true,
   "scripts": {
     "dev": "next dev",

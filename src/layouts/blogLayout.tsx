@@ -4,6 +4,7 @@ import { DocsIllustration } from "../components/DocsIllustration";
 import { authors, getAuthor } from "./authors";
 import { ILayout } from "./types";
 import { GradientBackground, RLogo } from "./utils";
+import { MLogo } from "../components/MLogo";
 
 const blogLayoutConfig = z.object({
   Title: z.string(),
@@ -29,7 +30,6 @@ const Component: React.FC<{ config: BlogLayoutConfig }> = ({ config }) => {
     >
       {/* gradient layers */}
       <GradientBackground theme={config.Theme} />
-
       {/* main text */}
       <div
         tw="flex flex-col text-left"
@@ -51,19 +51,19 @@ const Component: React.FC<{ config: BlogLayoutConfig }> = ({ config }) => {
           <p tw="text-3xl opacity-60 ml-7">{config.Author}</p>
         </div>
       </div>
-
       {/* railway logo */}
       {/* <RLogo
         theme={config.Theme}
         tw="absolute"
         style={{ top: 88, left: 96, width: 88, height: 88 }}
       /> */}
-
-      <RLogo
+      {/* <RLogo
         tw="absolute"
         style={{ top: 106, right: 97 }}
         theme={config.Theme}
-      />
+      /> */}
+
+      <MLogo tw="absolute" />
       <div tw="absolute top-0 right-0 flex">
         <DocsIllustration />
       </div>
@@ -84,7 +84,7 @@ export const blogLayout: ILayout<typeof blogLayoutConfig> = {
     {
       type: "select",
       name: "Author",
-      default: "Jake Runzer",
+      default: "Amadeus Mader",
       options: authors.map(author => author.name),
     },
     {

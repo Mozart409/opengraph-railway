@@ -14,7 +14,7 @@ export type DocsLayoutConfig = z.infer<typeof docsLayoutConfig>;
 const Component: React.FC<{ config: DocsLayoutConfig }> = ({ config }) => {
   const url =
     (config.Url ?? "").trim() === ""
-      ? "docs.railway.app"
+      ? "blog.mozart409.com"
       : (config.Url as string);
   return (
     <div
@@ -83,13 +83,13 @@ export const docsLayout: ILayout<typeof docsLayoutConfig> = {
     {
       type: "text",
       name: "Page",
-      default: "Railway Documentation",
+      default: "Mozart409 Blog",
       placeholder: "Text to display",
     },
     {
       type: "text",
       name: "Url",
-      default: "docs.railway.app",
+      default: "blog.mozart409.com",
       placeholder: "Url to display",
     },
   ],
