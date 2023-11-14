@@ -2,7 +2,7 @@ import React from "react";
 import { z } from "zod";
 import { DocsIllustration } from "../components/DocsIllustration";
 import { ILayout } from "./types";
-import { RLogo } from "./utils";
+import { MLogo } from "../components/MLogo";
 
 const docsLayoutConfig = z.object({
   Page: z.string(),
@@ -66,7 +66,12 @@ const Component: React.FC<{ config: DocsLayoutConfig }> = ({ config }) => {
       </p>
 
       {/* railway logo */}
-      <RLogo tw="absolute" style={{ top: 106, right: 97 }} />
+      {/* <RLogo tw="absolute" style={{ top: 106, right: 97 }} /> */}
+
+      <MLogo
+        tw="absolute"
+        style={{ top: 106, right: 97, borderRadius: "0.375rem" }}
+      />
 
       {/* illustration */}
       <div tw="absolute top-0 right-0 flex">

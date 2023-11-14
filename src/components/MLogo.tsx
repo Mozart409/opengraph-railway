@@ -1,14 +1,17 @@
 import React from "react";
 
-export const MLogo: React.FC = props => {
+export const MLogo: React.FC<{
+  style?: React.CSSProperties;
+}> = ({ style, ...props }) => {
   return (
     <svg
-      {...props}
       width="391"
       height="391"
       viewBox="0 0 391 391"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      style={{ width: 96, height: 96, ...style }}
+      {...props}
     >
       <g clip-path="url(#clip0)">
         <rect width="391" height="391" fill="#2E3440" />

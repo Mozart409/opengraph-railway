@@ -4,7 +4,8 @@ const customColors = {
   transparent: "transparent",
   bg: "#ffffff",
   fg: "#212529",
-  accent: "#C049FF",
+  accent: "#FFE000",
+  //accent: "#C049FF",
 };
 
 const monoStack = [

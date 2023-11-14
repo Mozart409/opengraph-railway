@@ -57,13 +57,18 @@ const Component: React.FC<{ config: BlogLayoutConfig }> = ({ config }) => {
         tw="absolute"
         style={{ top: 88, left: 96, width: 88, height: 88 }}
       /> */}
+
       {/* <RLogo
         tw="absolute"
         style={{ top: 106, right: 97 }}
         theme={config.Theme}
       /> */}
 
-      <MLogo tw="absolute" />
+      <MLogo
+        tw="absolute"
+        style={{ top: 106, right: 97, borderRadius: "0.375rem" }}
+      />
+
       <div tw="absolute top-0 right-0 flex">
         <DocsIllustration />
       </div>
